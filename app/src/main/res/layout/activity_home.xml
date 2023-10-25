@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/logo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/primaryColor"
+        android:paddingTop="20dp"
+        android:text="Contact Management"
+        android:textAlignment="center"
+        android:textColor="@color/bgColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvusername_home"
+            style="@style/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:text="Welcome" />
+
+        <Button
+            android:id="@+id/btnadd_home"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            app:icon="@drawable/baseline_add_24"
+            android:text="Add Contact " />
+
+        <Button
+            android:id="@+id/btndisplay_home"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            app:icon="@drawable/baseline_format_list_bulleted_24"
+            android:text="List all contact" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_logout_home"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                app:icon="@drawable/baseline_logout_24" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
